@@ -11,3 +11,8 @@
 .space-mono {
   font-family: "Space Mono", monospace;
 }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}

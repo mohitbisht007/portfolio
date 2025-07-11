@@ -10,19 +10,19 @@ export default function NavBar() {
     }, []);
 
     return (
-        <nav className="space-mono flex flex-col justify-between text-[#8892B0] p-6">
+        <nav className="space-mono flex flex-col justify-between text-[#8892B0] p-5">
             <div onClick={() => setOpen(false)} className={`fixed inset-0 z-10 bg-[#0A192F]/50 backdrop-blur-[2px] transition-all duration-300 ease-in-out md:hidden ${
     open ? 'opacity-100' : 'opacity-0 pointer-events-none'} `}>
             </div>
-            <div className="flex justify-between w-full">
+            <div className="flex justify-between items-center w-full">
                 <Button />
                 <div className="hidden md:flex justify-between p-6 z-20 text-[13px] text-[#CCD6F6]">
-                    <ul className="flex gap-7">
+                    <ul className="flex gap-7 justify-center items-center">
                         <li className="tranition-all duration-300 cursor-pointer hover:text-[#64FFDA]"><span className="text-[#64FFDA]">01.</span> About</li>
                         <li className="tranition-all duration-300 cursor-pointer hover:text-[#64FFDA]"><span className="text-[#64FFDA]">02.</span> Experience</li>
                         <li className="tranition-all duration-300 cursor-pointer hover:text-[#64FFDA]"><span className="text-[#64FFDA]">03.</span> Work</li>
                         <li className="tranition-all duration-300 cursor-pointer hover:text-[#64FFDA]"><span className="text-[#64FFDA]">04.</span> Contact</li>
-                        <li><Button /></li>
+                        <li><Button name="Resume"  /></li>
                     </ul>
                 </div>
                 <button onClick={() => setOpen(!open)} className="flex cursor-pointer flex-col items-end md:hidden z-40">
@@ -44,7 +44,7 @@ export default function NavBar() {
                     <li className="tranition-all duration-300 cursor-pointer hover:text-[#64FFDA]"><span className="text-[#64FFDA]">02.</span> Experience</li>
                     <li className="tranition-all duration-300 cursor-pointer hover:text-[#64FFDA]"><span className="text-[#64FFDA]">03.</span> Work</li>
                     <li className="tranition-all duration-300 cursor-pointer hover:text-[#64FFDA]"><span className="text-[#64FFDA]">04.</span> Contact</li>
-                    <li><Button /></li>
+                    <li><Button name="Resume" /></li>
                 </ul>
             </div>
         </nav>
