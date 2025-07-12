@@ -2,11 +2,11 @@ import me from "../assets/me.avif"
 
 export default function Aboutme() {
     return (
-        <div className="w-full p-5 container flex text-[#8892B0]">
+        <div className="w-full p-5 md:w-[80%] m-auto flex md:flex-row flex-col text-[#8892B0]">
             <div className="md:w-[60%] md:p-5">
-                <div className="flex">
-                <h2 className="mb-7 text-[25px] text-[#CCD6F6] font-bold"><span className="text-[#64FFDA] space-mono text-[20px]">01.</span> About Me </h2> &nbsp; &nbsp;
-                <div className="text-[#8892B0] border-t-1 ml-2 mt-5 w-[60%]"></div>
+                <div className="flex flex-col md:flex-row mb-7">
+                <h2 className=" text-[25px] text-[#CCD6F6] font-bold"><span className="text-[#64FFDA] space-mono text-[20px]">01.</span> About Me </h2> &nbsp; &nbsp;
+                <div className="text-[#8892B0] border-t-1 ml-2 md:mt-5 w-[60%]"></div>
                 </div>
                 
                 <p>Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p> <br />
@@ -27,7 +27,7 @@ export default function Aboutme() {
                 </ul>
                 </div>
             </div>
-            <div className="w-[40%] p-4 mt-20">
+            <div className="md:w-[40%] w-[80%] m-auto p-4 mt-20">
                 <img src={`${me}`} alt="" className="shadow-[10px_10px_0_#64FFDA] rounded-md" />
             </div>
         </div>

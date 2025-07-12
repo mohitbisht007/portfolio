@@ -20,14 +20,14 @@ export default function WorkExperiences() {
 
 
     return (
-        <div className="container text-[#8892B0]">
-            <div className="md:w-[90%] ml-20 mt-10">
-                <div className="flex">
-                    <h2 className="mb-7 text-[25px] text-[#CCD6F6] font-bold"><span className="text-[#64FFDA] space-mono text-[20px]">02.</span> Where I’ve Worked </h2> &nbsp; &nbsp;
-                    <div className="text-[#8892B0] border-t-1 ml-2 mt-5 w-[50%]"></div>
+        <div className="md:w-[80%] mt-30 m-auto text-[#8892B0]">
+            <div className="md:w-[90%] md:ml-20 mt-10">
+                <div className="flex mb-7 text-center flex-col md:flex-row mb-7">
+                    <h2 className="text-[25px] text-[#CCD6F6] font-bold"><span className="text-[#64FFDA] space-mono text-[20px]">02.</span> Where I’ve Worked </h2> &nbsp; &nbsp;
+                    <div className="text-[#8892B0] border-t-1 ml-2 md:mt-5 md:w-[50%]"></div>
                 </div>
                 <div className="md:flex mb-5">
-                    <div className="md:w-[30%] flex md:flex-col space-mono text-[14px]">
+                    <div className="md:w-[30%] mb-15 flex md:flex-col space-mono text-[14px]">
                         <div onClick={() => handleOnClick(1)} className={`border-l-2 hover:border-l-[#64FFDA] hover:text-[#64FFDA] transition-all ease-in-out duration-300 ${isActive.button1 ? "border-l-[#64FFDA] text-[#64FFDA]" : ""} `}>
                             <button className={`py-3 px-4 text-start hover:bg-[#112240] ${isActive.button1 ? "bg-[#112240]" : ""}`}>Charya Global</button>
                         </div>

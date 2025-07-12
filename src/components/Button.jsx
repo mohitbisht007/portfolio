@@ -1,6 +1,8 @@
-export default function Button({name}){
+export default function Button({name, clickfnc}){
     return (
-        <button className="border 
+        <button 
+        onClick={clickfnc}
+        className="border 
         rounded-md 
         p-3
         text-[#64FFDA] 

@@ -8,6 +8,8 @@ import Projects from "./components/Projects";
 import Social from "./components/Socials";
 import NavBar2 from "./assets/NavBar2"
 import WorkExperiences from "./components/WorkExperience";
+import SocialMobile from "./components/SocialMobile";
+import Footer from "./components/Footer";
 
 export default function App () {
 
@@ -21,5 +23,7 @@ export default function App () {
     <Projects/>
     <OtherProject/>
     <Contact/>
+    <SocialMobile/>
+    <Footer/>
   </>
 }
